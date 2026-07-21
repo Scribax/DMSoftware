@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // --- WhatsApp Configuration ---
-  const WHATSAPP_NUMBER = "5491112345678"; 
+  const WHATSAPP_NUMBER = "5492604295344"; 
   const DEFAULT_MESSAGE = "Hola Franco, quiero consultar por un sistema/página web para mi negocio.";
 
   const updateWhatsAppLinks = () => {
