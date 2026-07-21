@@ -50,11 +50,21 @@ server {
 
     location / {
         try_files $uri $uri/ =404;
+        # HTML nunca se cachea en el navegador
+        add_header Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate";
+        add_header Pragma "no-cache";
+        expires 0;
     }
 
     # Cache de activos estáticos
-    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2)$ {
+    location ~* \.(jpg|jpeg|png|gif|ico|svg|woff|woff2)$ {
         expires 30d;
+        add_header Cache-Control "public, no-transform";
+    }
+
+    # Cache corta para CSS y JS (se invalida con ?v=N)
+    location ~* \.(css|js)$ {
+        expires 7d;
         add_header Cache-Control "public, no-transform";
     }
 }
