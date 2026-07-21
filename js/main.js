@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // --- WhatsApp Number Configuration ---
   const WHATSAPP_NUMBER = "5492604295344";
-  const DEFAULT_MESSAGE = "Hola Franco, quiero consultar por un sistema/página web a medida para mi negocio.";
+  const DEFAULT_MESSAGE = "Hola Franco, vengo de la web y quiero consultar por un sistema/página web a medida para mi negocio.";
 
   const updateWhatsAppLinks = () => {
     const defaultUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.wa-link').forEach(link => {
       const customMsg = link.getAttribute('data-wa-msg');
       if (customMsg) {
-        link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(customMsg)}`;
+        link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(customMsg + " (Visto en dmsoftwaretech.com)")}`;
       } else {
         link.href = defaultUrl;
       }
