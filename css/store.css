@@ -76,35 +76,24 @@
 .product-img-wrapper {
   width: 100%;
   height: 180px;
-  background: var(--bg-elevated);
+  background: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, var(--bg-elevated) 80%);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.product-badge-discount {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 3px 8px;
-  border-radius: var(--radius-xs);
-  background: var(--danger);
-  color: #FFFFFF;
-  font-size: 0.72rem;
-  font-weight: 700;
+.svg-hardware-icon {
+  width: 68px;
+  height: 68px;
+  transition: transform 0.4s var(--ease-out), filter 0.3s;
 }
 
-.product-card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s var(--ease-out);
-}
-
-.product-card:hover .product-card-img {
-  transform: scale(1.06);
+.product-card:hover .svg-hardware-icon {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 14px var(--accent-glow));
 }
 
 .product-card-body {
