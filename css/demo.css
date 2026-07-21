@@ -403,17 +403,18 @@
 /* Responsive adjustments inside Demo Window */
 @media (max-width: 900px) {
   .demo-sidebar {
-    width: 64px;
-    min-width: 64px;
-    padding: 12px 6px;
+    width: 60px;
+    min-width: 60px;
+    padding: 12px 4px;
   }
+  .demo-sidebar-brand { padding: 10px 6px; justify-content: center; }
   .demo-sidebar-brand .logo-text,
   .demo-nav-item span {
     display: none;
   }
   .demo-nav-item {
     justify-content: center;
-    padding: 12px;
+    padding: 12px 6px;
   }
   .demo-kpi-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -421,17 +422,101 @@
   .demo-charts-grid {
     grid-template-columns: 1fr;
   }
+  .demo-main-canvas {
+    padding: 20px;
+  }
+  /* Hide live version text on smaller screens */
+  .demo-header-bar > div:nth-child(2) {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
+  .demo-modal {
+    padding: 0;
+  }
   .demo-window {
-    height: 98vh;
-    border-radius: var(--radius-lg);
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+    border: none;
+  }
+  .demo-header-bar {
+    padding: 10px 16px;
+  }
+  .demo-sidebar {
+    width: 50px;
+    min-width: 50px;
+    padding: 10px 3px;
+    gap: 3px;
+  }
+  .demo-nav-item {
+    padding: 10px 4px;
+    border-radius: var(--radius-sm);
+  }
+  .demo-nav-item svg {
+    width: 16px;
+    height: 16px;
   }
   .demo-kpi-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
-  .demo-main-canvas {
+  .demo-kpi-card {
     padding: 16px;
   }
+  .demo-kpi-val {
+    font-size: 1.3rem;
+  }
+  .demo-main-canvas {
+    padding: 14px;
+    gap: 16px;
+  }
+  .demo-canvas-title h2 {
+    font-size: 1.1rem;
+  }
+  .demo-canvas-title p {
+    font-size: 0.78rem;
+  }
+  .demo-bar-chart {
+    gap: 6px;
+  }
+  .demo-bar-fill {
+    max-width: 28px;
+  }
+  .demo-bar-label {
+    font-size: 0.68rem;
+  }
+  .demo-widget-card {
+    padding: 16px;
+  }
+  /* Client cards: single column */
+  .demo-client-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* Modal buttons stack vertically */
+  .checkout-card .btn-row {
+    flex-direction: column !important;
+  }
+  .checkout-card .btn-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .demo-sidebar {
+    width: 44px;
+    min-width: 44px;
+    padding: 8px 2px;
+  }
+  .demo-nav-item { padding: 8px 2px; }
+  .demo-nav-item svg { width: 15px; height: 15px; }
+  .demo-main-canvas { padding: 10px; gap: 12px; }
+  .demo-canvas-title h2 { font-size: 1rem; }
+  .demo-kpi-val { font-size: 1.15rem; }
+  .demo-kpi-top { font-size: 0.75rem; }
+  .demo-table th,
+  .demo-table td { padding: 6px 8px; font-size: 0.72rem; }
+  .demo-bar-fill { max-width: 22px; }
 }

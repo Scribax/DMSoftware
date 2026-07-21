@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <button class="btn btn-primary action-add-client" style="padding:8px 16px; font-size:0.8rem;">+ Registrar Cliente</button>
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px;">
+      <div class="demo-client-grid" style="display:grid; grid-template-columns:repeat(2, 1fr); gap:16px;">
         ${state.clients.map(c => `
           <div class="demo-kpi-card">
             <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
@@ -469,7 +469,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <label style="font-size:0.8rem; font-weight:600; color:var(--text-secondary);">Cantidad (Bultos / Unidades):</label>
         <input type="number" id="saleQtyInput" value="5" min="1" style="width:100%; padding:10px; border-radius:8px; background:var(--bg-elevated); color:var(--text-primary); border:1px solid var(--border-default); margin-bottom:16px;">
 
-        <div style="display:flex; gap:10px; justify-content:flex-end;">
+        <div class="btn-row" style="display:flex; gap:10px; justify-content:flex-end;">
           <button class="btn btn-secondary" id="cancelSaleBtn">Cancelar</button>
           <button class="btn btn-primary" id="confirmSaleBtn">Emitir Remito PNG</button>
         </div>
@@ -534,7 +534,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p style="font-size:1.1rem; font-weight:800; color:#2563eb;">TOTAL: $${sale.total.toLocaleString('es-AR')}</p>
         </div>
 
-        <div style="margin-top:16px; display:flex; gap:8px;">
+        <div class="btn-row" style="margin-top:16px; display:flex; gap:8px;">
           <button class="btn btn-whatsapp" id="btnSendWa" style="flex:1; justify-content:center; font-size:0.8rem;">📱 Enviar por WhatsApp</button>
           <button class="btn btn-secondary" id="btnCloseReceipt" style="color:#0f172a; border-color:#cbd5e1;">Cerrar</button>
         </div>
@@ -564,7 +564,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <label style="font-size:0.8rem; color:var(--text-secondary);">CUIT / DNI:</label>
         <input type="text" id="newClientCuit" placeholder="30-12345678-9" style="width:100%; padding:10px; border-radius:8px; background:var(--bg-elevated); color:var(--text-primary); border:1px solid var(--border-default); margin-bottom:16px;">
 
-        <div style="display:flex; gap:10px; justify-content:flex-end;">
+        <div class="btn-row" style="display:flex; gap:10px; justify-content:flex-end;">
           <button class="btn btn-secondary" id="cancelClientBtn">Cancelar</button>
           <button class="btn btn-primary" id="saveClientBtn">Guardar Cliente</button>
         </div>
