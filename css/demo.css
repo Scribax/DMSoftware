@@ -11,12 +11,11 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.9);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.35s var(--ease-out);
+  -webkit-overflow-scrolling: touch;
 }
 
 .demo-modal.active {
@@ -29,6 +28,7 @@
   width: 100%;
   max-width: 1280px;
   height: 90vh;
+  height: 90dvh;
   max-height: 850px;
   background: var(--bg-surface);
   border: 1px solid var(--border-strong);
@@ -39,6 +39,7 @@
   overflow: hidden;
   transform: scale(0.96) translateY(20px);
   transition: transform 0.35s var(--ease-out);
+  -webkit-overflow-scrolling: touch;
 }
 
 .demo-modal.active .demo-window {
@@ -437,9 +438,12 @@
   }
   .demo-window {
     height: 100vh;
+    height: 100dvh;
     max-height: 100vh;
+    max-height: 100dvh;
     border-radius: 0;
     border: none;
+    overflow-x: hidden;
   }
   .demo-header-bar {
     padding: 10px 16px;

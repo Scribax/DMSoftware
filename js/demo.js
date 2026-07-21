@@ -35,16 +35,26 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
   };
 
-  // --- Open & Close Handlers ---
+  // --- Open & Close Handlers (proper scroll-lock for mobile) ---
+  let _scrollY = 0;
+
   const openDemo = () => {
-    demoModal?.classList.add('active');
+    _scrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${_scrollY}px`;
+    document.body.style.width = '100%';
     document.body.style.overflow = 'hidden';
+    demoModal?.classList.add('active');
     renderCurrentView();
   };
 
   const closeDemo = () => {
     demoModal?.classList.remove('active');
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
     document.body.style.overflow = '';
+    window.scrollTo(0, _scrollY);
   };
 
   openDemoBtns.forEach(btn => btn.addEventListener('click', openDemo));
