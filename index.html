@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DM Software | Sistemas A Medida, Páginas Web y Aplicaciones PWA</title>
-  <meta name="description" content="Desarrollo de sistemas a medida para empresas, granjas y distribuidoras. Código 100% tuyo, sin cuotas mensuales por usuario, instalable en celular y compu.">
-  <meta name="keywords" content="desarrollo de software, sistemas a medida argentina, software para distribuidoras, PWA granja avicola, sistema de gestion stock, desarrollo web profesional">
-  <meta property="og:title" content="DM Software | Sistemas A Medida & Aplicaciones Web">
-  <meta property="og:description" content="Sistemas de gestión reales para negocios que superaron el Excel. Sin pagar suscripciones por usuario.">
+  <title>DM Software Tech | Digitalizamos Empresas con Software A Medida</title>
+  <meta name="description" content="Desarrollo de sistemas de gestión a medida, tiendas online, apps móviles PWA y automatizaciones para empresas. Código 100% tuyo sin cuotas por usuario.">
+  <meta name="keywords" content="desarrollo de software argentina, sistemas a medida, software para distribuidoras, PWA granja avicola, sistema de gestion stock, desarrollo web profesional, tienda online a medida">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="DM Software Tech | Software A Medida & Sistemas Enterprise">
+  <meta property="og:description" content="Digitalizamos empresas con software hecho a medida. Sistemas de gestión reales, tiendas online y apps móviles.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dmsoftwaretech.com">
+  <meta property="og:image" content="assets/banner-facebook.png">
 
   <!-- Favicon & Brand Icons -->
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css?v=3">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/demo.css?v=4">
+  <link rel="stylesheet" href="css/store.css?v=4">
 </head>
 <body>
 
@@ -26,459 +32,606 @@
     <div class="container navbar">
       <a href="#" class="logo">
         <div class="logo-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
         </div>
-        <span>DM <span class="text-gradient">Software</span></span>
+        <span>DM <span class="text-gradient">Software Tech</span></span>
       </a>
 
       <nav class="nav-menu" id="navMenu">
         <a href="#soluciones" class="nav-link">Soluciones</a>
+        <a href="#demo" class="nav-link">Demo Interactiva</a>
         <a href="#casos" class="nav-link">Sistemas Reales</a>
-        <a href="#ventajas" class="nav-link">Ventajas</a>
-        <a href="#faq" class="nav-link">Preguntas Frecuentes</a>
+        <a href="#tienda" class="nav-link">Tienda Demo</a>
+        <a href="#proceso" class="nav-link">Proceso</a>
+        <a href="#faq" class="nav-link">FAQ</a>
       </nav>
 
       <div class="nav-actions">
-        <div class="status-pill" style="display: none;">
-          <span class="status-dot"></span>
-          <span>Desarrollo en línea</span>
-        </div>
-
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro/oscuro">
           <span id="themeIcon"></span>
         </button>
 
-        <a href="#" class="btn btn-whatsapp btn-sm wa-link">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-          </svg>
-          <span>Hablar por WhatsApp</span>
+        <button class="btn btn-ghost open-demo-btn">
+          <span>Ver Demo</span>
+        </button>
+
+        <a href="#" class="btn btn-primary wa-link" data-wa-msg="Hola Franco, quiero solicitar un presupuesto para un sistema/página a medida.">
+          <span>Presupuesto</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
 
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu movil">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- ==========================================================================
-         HERO SECTION
-         ========================================================================== -->
-    <section class="hero-section">
-      <div class="hero-glow"></div>
-      <div class="container hero-grid">
-        <div class="hero-content fade-up">
-          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
-            <span class="status-pill">
-              <span class="status-dot"></span>
-              <span>Sistemas Self-Hosted & PWA</span>
-            </span>
-            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">100% de tu propiedad</span>
-          </div>
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-glow"></div>
 
-          <h1 class="hero-title">
-            Sistemas de gestión a medida para negocios que <span class="text-gradient">superaron el Excel.</span>
-          </h1>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        <span>Desarrollo de Software Enterprise & Systems</span>
+      </div>
 
-          <p class="hero-subtitle">
-            Desarrollamos la solución exacta para tu distribuidora, granja o empresa. Instalado en tu propia infraestructura o servidor, sin cuotas por usuario y accesible desde tu celular.
-          </p>
+      <h1 class="hero-title">
+        Digitalizamos empresas con <span class="text-gradient">software hecho a medida.</span>
+      </h1>
 
-          <div class="hero-buttons">
-            <a href="#" class="btn btn-whatsapp btn-lg wa-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-              </svg>
-              <span>Consultar Proyecto por WhatsApp</span>
-            </a>
+      <div class="hero-typing-wrap">
+        <span>Desarrollamos soluciones integrales de alto impacto: </span>
+        <span class="typing-line" id="typingElement"></span><span class="typing-cursor"></span>
+      </div>
 
-            <a href="#casos" class="btn btn-outline btn-lg">
-              <span>Ver demos en vivo</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-          </div>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary btn-lg wa-link" data-wa-msg="Hola Franco, quiero solicitar un presupuesto por WhatsApp para mi empresa.">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Solicitar presupuesto</span>
+        </a>
 
-          <div class="hero-metrics">
-            <div class="metric-item">
-              <div class="metric-number">0%</div>
-              <div class="metric-label">Comisiones por usuario</div>
-            </div>
-            <div class="metric-item">
-              <div class="metric-number">100%</div>
-              <div class="metric-label">Control de saldo en backend</div>
-            </div>
-            <div class="metric-item">
-              <div class="metric-number">PWA</div>
-              <div class="metric-label">App instalable en celular</div>
-            </div>
+        <button class="btn btn-secondary btn-lg open-demo-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <span>Ver Demo en Vivo</span>
+        </button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number text-gradient" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Sistemas Implementados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient" data-target="50" data-suffix="K+">0</div>
+          <div class="stat-label">Transacciones Procesadas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient" data-target="99" data-suffix=".9%">0</div>
+          <div class="stat-label">Disponibilidad (Uptime)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INDUSTRIES INFINITE TRACK
+       ========================================================================== -->
+  <section class="industries">
+    <div class="industries-track">
+      <div class="industry-item"><span class="icon">📦</span> Distribuidoras & Mayoristas</div>
+      <div class="industry-item"><span class="icon">🥚</span> Granjas Avícolas & Productores</div>
+      <div class="industry-item"><span class="icon">🍔</span> Gastronomía & Restaurantes</div>
+      <div class="industry-item"><span class="icon">🛍️</span> E-Commerce & Retail</div>
+      <div class="industry-item"><span class="icon">🔧</span> Ferreterías & Corralones</div>
+      <div class="industry-item"><span class="icon">🏥</span> Clínicas & Centros Médicos</div>
+      <div class="industry-item"><span class="icon">🚗</span> Talleres Mecánicos & Repuestos</div>
+
+      <!-- Duplicated for smooth loop -->
+      <div class="industry-item"><span class="icon">📦</span> Distribuidoras & Mayoristas</div>
+      <div class="industry-item"><span class="icon">🥚</span> Granjas Avícolas & Productores</div>
+      <div class="industry-item"><span class="icon">🍔</span> Gastronomía & Restaurantes</div>
+      <div class="industry-item"><span class="icon">🛍️</span> E-Commerce & Retail</div>
+      <div class="industry-item"><span class="icon">🔧</span> Ferreterías & Corralones</div>
+      <div class="industry-item"><span class="icon">🏥</span> Clínicas & Centros Médicos</div>
+      <div class="industry-item"><span class="icon">🚗</span> Talleres Mecánicos & Repuestos</div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SOLUCIONES / SERVICIOS
+       ========================================================================== -->
+  <section class="section" id="soluciones">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Soluciones Enterprise</span>
+        <h2 class="section-title">Software diseñado para escalar tu operación.</h2>
+        <p class="section-subtitle">Reemplazamos planillas desactualizadas y cuadernos por plataformas modernas de alta confiabilidad.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">📊</div>
+          <h3>Sistemas de Gestión A Medida</h3>
+          <p>Control exacto de stock, inventario multicamara, caja diaria, cuenta corriente de clientes y generación automática de facturas y remitos.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🛍️</div>
+          <h3>Tiendas Online & E-Commerce</h3>
+          <p>Catálogos interactivos integrados con tu stock en tiempo real, envío directo de pedidos por WhatsApp y paneles de venta fluidos.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📱</div>
+          <h3>Aplicaciones Móviles PWA</h3>
+          <p>Instalables directo en celular y compu sin tiendas de descarga. Operan sin internet en depósitos y sincronizan al reconectarse.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">⚡</div>
+          <h3>Automatizaciones & Workflows</h3>
+          <p>Envío automático de alertas de stock bajo por WhatsApp, recordatorios de cobro a clientes y sincronización de planillas.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📈</div>
+          <h3>Dashboards Analytics & KPIs</h3>
+          <p>Visualizá el margen neto real, volumen de ventas y tendencias de demanda con gráficos interactivos y métricas financieras claras.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🔒</div>
+          <h3>Software Empresarial Self-Hosted</h3>
+          <p>Despliegue en tu propio servidor VPS privado con contenedores Docker. Código 100% tuyo sin licencias mensuales por usuario.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BENEFICIOS COMPETITIVOS
+       ========================================================================== -->
+  <section class="section" id="ventajas" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Diferenciales Clave</span>
+        <h2 class="section-title">¿Por qué las empresas eligen DM Software?</h2>
+        <p class="section-subtitle">No somos una agencia genérica. Construimos arquitectura sólida sin comisiones ocultas.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">💻</div>
+          <div>
+            <h3>Código 100% de tu Propiedad</h3>
+            <p>El desarrollo es completamente tuyo. No quedás atado a proveedores ni a contratos de permanencia engañosos.</p>
           </div>
         </div>
 
-        <!-- Interactive Showcase Window with Switchable Tabs -->
-        <div class="hero-card-preview fade-up">
-          <div class="showcase-window">
-            <div class="showcase-tabs-bar">
-              <div class="showcase-dots">
-                <span class="window-dot red"></span>
-                <span class="window-dot yellow"></span>
-                <span class="window-dot green"></span>
-              </div>
-              <div style="display: flex; gap: 0.5rem;">
-                <button class="showcase-tab-btn active" data-target="imgDistribuidora">
-                  <span>📦 Distribuidora Mayorista</span>
-                </button>
-                <button class="showcase-tab-btn" data-target="imgAvicola">
-                  <span>🐔 Granja Avícola PWA</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="showcase-img-container">
-              <img id="imgDistribuidora" src="assets/proyecto-distribuidora.png" alt="Dashboard Distribuidora DM Software" class="showcase-img">
-              <img id="imgAvicola" src="assets/proyecto-avicola.png" alt="Sistema Granja Avícola DM Software" class="showcase-img hidden">
-            </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🚀</div>
+          <div>
+            <h3>Sin Cuotas Por Usuario</h3>
+            <p>Pagan el desarrollo y el abono fijo de servidor. Pueden tener 5 o 500 empleados usando el sistema sin pagar de más.</p>
           </div>
+        </div>
 
-          <div class="floating-badge-whatsapp">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#25D366">
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981z"/>
-            </svg>
-            <div>
-              <div style="font-size: 0.825rem; font-weight: 700;">Atención Directa con Dev</div>
-              <div style="font-size: 0.725rem; color: var(--text-muted);">Franco • Lead Developer</div>
-            </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">📲</div>
+          <div>
+            <h3>Comprobantes PNG por WhatsApp</h3>
+            <p>Tus vendedores generan remitos o recibos de cobro y los envían con 1 click como imagen liviana directamente al cliente.</p>
+          </div>
+        </div>
+
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🛡️</div>
+          <div>
+            <h3>Auditoría & Balance Estricto</h3>
+            <p>Historial inmutable de modificaciones de precios, movimientos de caja y auditoría por usuario para evitar fugas de stock.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         SOLUTIONS / SERVICES SECTION
-         ========================================================================== -->
-    <section class="services-section" id="soluciones">
-      <div class="container">
-        <div class="text-center fade-up">
-          <span class="section-tag">Nuestras Capacidades</span>
-          <h2 class="section-title">Soluciones diseñadas desde el problema real</h2>
-          <p class="section-subtitle">
-            No vendemos plantillas genéricas. Analizamos cómo funciona tu negocio y construimos la herramienta exacta para operarlo sin fricciones.
-          </p>
+  <!-- ==========================================================================
+       DEMO INTERACTIVA PREVIEW SECTION
+       ========================================================================== -->
+  <section class="section demo-preview-section" id="demo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Experiencia Interactiva</span>
+        <h2 class="section-title">Probá nuestro sistema en tiempo real.</h2>
+        <p class="section-subtitle">Explorá la demo interactiva navegable sin instalar nada ni crear cuenta.</p>
+      </div>
+
+      <div class="demo-preview-wrapper reveal-scale">
+        <div class="demo-topbar">
+          <div class="demo-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="demo-topbar-title">sistema.dmsoftwaretech.com/dashboard</div>
+          <div style="font-size:0.75rem; color:var(--success); font-weight:600;">● MOCKUP INTERACTIVO V1.4</div>
         </div>
 
-        <div class="features-grid-custom">
-          <!-- Item 1 -->
-          <div class="feature-box fade-up">
-            <span class="feature-badge">01. MATEMÁTICA ESTRICTA</span>
-            <h3>Cuentas Corrientes Imponchables</h3>
-            <p>El backend recalcula el saldo exacto en cada operación (`Saldo = Σ Facturas - Σ Pagos`). Eliminamos de raíz los descuadres de dinero con clientes.</p>
-          </div>
-
-          <!-- Item 2 -->
-          <div class="feature-box fade-up">
-            <span class="feature-badge">02. COMPROBANTES WHATSAPP</span>
-            <h3>Factura Visual en Formato PNG</h3>
-            <p>Imágenes automáticas de remitos y cobros diseñadas para abrirse al instante en el celular de tu cliente por WhatsApp, sin depender de visores de PDF.</p>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="feature-box fade-up">
-            <span class="feature-badge">03. CONTROL DE REPOSICIÓN</span>
-            <h3>Alertas de Stock Bajo & Mermas</h3>
-            <p>Diagnóstico preventivo con semáforo inteligente de inventario. Comprá a tiempo la mercadería crítica antes de pausar la venta.</p>
-          </div>
-
-          <!-- Item 4 -->
-          <div class="feature-box fade-up">
-            <span class="feature-badge">04. PWA SIN COMISIONES</span>
-            <h3>App Móvil Instalable sin Tiendas</h3>
-            <p>Instalá la aplicación en Android e iOS directo desde el navegador con un clic. Acceso completo 24/7 sin pagar comisiones en App Stores.</p>
+        <div class="demo-preview-body">
+          <img src="assets/proyecto-avicola.png" alt="Demo Sistema de Gestion" class="demo-preview-img">
+          <div class="demo-preview-overlay">
+            <button class="btn btn-primary btn-lg open-demo-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Abrir Sistema Interactivo</span>
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         REAL CASE STUDIES SECTION
-         ========================================================================== -->
-    <section class="cases-section" id="casos">
-      <div class="container">
-        <div class="text-center fade-up">
-          <span class="section-tag">Casos de Éxito en Producción</span>
-          <h2 class="section-title">Sistemas operando activamente</h2>
-          <p class="section-subtitle">
-            Conocé cómo ayudamos a reemplazar planillas caóticas por sistemas robustos y confiables.
-          </p>
+  <!-- ==========================================================================
+       CASOS DE USO / PROYECTOS REALES (CARROUSEL)
+       ========================================================================== -->
+  <section class="section" id="casos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Casos de Éxito</span>
+        <h2 class="section-title">Sistemas diseñados para operaciones reales.</h2>
+        <p class="section-subtitle">Conocé algunas de las soluciones que tenemos funcionando en producción.</p>
+      </div>
+
+      <div class="cases-scroll">
+        <!-- Case 1: Avícola -->
+        <div class="case-card">
+          <div class="case-card-img" style="background: linear-gradient(135deg, #1E293B, #0F172A);">🥚</div>
+          <div class="case-card-body">
+            <h3>Granja Avícola Don Lucas</h3>
+            <p>Control de producción de huevos por mapa de galpones, clasificación por tamaño (S/M/L/XL), balance financiero estricto y facturas en PNG.</p>
+            <div class="case-tags">
+              <span class="case-tag">Next.js 14</span>
+              <span class="case-tag">PostgreSQL</span>
+              <span class="case-tag">Docker PWA</span>
+            </div>
+            <button class="btn btn-ghost open-demo-btn" style="width:100%; justify-content:center;">Ver Demo Interactivo</button>
+          </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; margin-top: 3rem;">
-          <!-- Case 1: Granja Avícola -->
-          <div class="case-card fade-up">
-            <div style="order: 1;">
-              <img src="assets/proyecto-avicola.png" alt="Sistema PWA Granja Avícola" style="width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border: 1px solid var(--glass-border);">
+        <!-- Case 2: Distribuidora -->
+        <div class="case-card">
+          <div class="case-card-img" style="background: linear-gradient(135deg, #1E3A8A, #1E1B4B);">📦</div>
+          <div class="case-card-body">
+            <h3>Distribuidora PEREZ</h3>
+            <p>Gestión masiva de ventas mayoristas, alertas automáticas de stock mínimo por depósito, control de repartidores y remitos por WhatsApp.</p>
+            <div class="case-tags">
+              <span class="case-tag">React + Vite</span>
+              <span class="case-tag">Prisma ORM</span>
+              <span class="case-tag">Express API</span>
             </div>
-            <div style="order: 2;">
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-cyan); font-family: var(--font-mono);">SYSTEM: GRANJA-AVICOLA-PWA</span>
-              <h3 style="font-size: 1.5rem; font-weight: 800; margin: 0.4rem 0 0.8rem 0;">Gestión de Granja Avícola & Producción por Calibre</h3>
-              <p style="color: var(--text-muted); font-size: 0.925rem; margin-bottom: 1.25rem;">
-                Plataforma PWA self-hosted desarrollada para controlar la postura diaria por gallinero y calibre de huevo (S/M/L/XL), ventas, repartos y cobros en cuenta corriente.
-              </p>
-              <ul style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
-                <li style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Formulario Móvil Rápido:</strong> Carga de cajones/maples directo en el galpón.</span>
-                </li>
-                <li style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Facturas PNG para WhatsApp:</strong> Remitos en imagen enviables en 1 segundo.</span>
-                </li>
-                <li style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Stack:</strong> Next.js 14 · Express · PostgreSQL 15 · Docker Compose · Nginx.</span>
-                </li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-sm wa-link" data-wa-msg="Hola Franco, vi el caso de la Granja Avícola y quiero consultar para implementar un sistema PWA para mi negocio.">
-                <span>Solicitar consulta por un sistema así</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
-            </div>
+            <button class="btn btn-ghost open-demo-btn" style="width:100%; justify-content:center;">Ver Demo Interactivo</button>
           </div>
+        </div>
 
-          <!-- Case 2: Distribuidora -->
-          <div class="case-card fade-up">
-            <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--whatsapp-green); font-family: var(--font-mono);">SYSTEM: DISTRIBUIDORA-CORE</span>
-              <h3 style="font-size: 1.5rem; font-weight: 800; margin: 0.4rem 0 0.8rem 0;">Dashboard de Operaciones para Distribuidora Mayorista</h3>
-              <p style="color: var(--text-muted); font-size: 0.925rem; margin-bottom: 1.25rem;">
-                Panel de control en vivo para operar ventas masivas, alertas de falta de stock, balance de rentabilidad neta (`Ganancia = Ventas - Costos - Gastos`) y auditoría de cuentas comerciales.
-              </p>
-              <ul style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
-                <li style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Semáforo de Reposición:</strong> Alerta inmediata de productos con stock crítico.</span>
-                </li>
-                <li style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Trazabilidad Completa:</strong> Registro de ventas fiadas, notas de pedido y notas de crédito.</span>
-                </li>
-                <li style="display: flex; align-items: center; gap: 0.5rem;">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span><strong>Stack:</strong> React · Vite · Express · Prisma ORM · PostgreSQL · Docker.</span>
-                </li>
-              </ul>
-              <a href="#" class="btn btn-whatsapp btn-sm wa-link" data-wa-msg="Hola Franco, me interesó el dashboard de operaciones para distribuidoras. Quiero coordinar una charla.">
-                <span>Pedir presupuesto</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
+        <!-- Case 3: E-Commerce -->
+        <div class="case-card">
+          <div class="case-card-img" style="background: linear-gradient(135deg, #065F46, #064E3B);">🛍️</div>
+          <div class="case-card-body">
+            <h3>Tienda Retail / Mayorista</h3>
+            <p>E-Commerce completo sincronizado con el stock central de la empresa. Proceso de carrito optimizado y pedidos automáticos.</p>
+            <div class="case-tags">
+              <span class="case-tag">Full-Stack Store</span>
+              <span class="case-tag">WhatsApp API</span>
             </div>
-            <div>
-              <img src="assets/proyecto-distribuidora.png" alt="Dashboard Distribuidora Mayorista" style="width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-md); border: 1px solid var(--glass-border);">
+            <a href="#tienda" class="btn btn-ghost" style="width:100%; justify-content:center;">Probar Tienda Demo</a>
+          </div>
+        </div>
+
+        <!-- Case 4: Gastronomía -->
+        <div class="case-card">
+          <div class="case-card-img" style="background: linear-gradient(135deg, #831843, #500724);">🍔</div>
+          <div class="case-card-body">
+            <h3>Restaurante & Comandera</h3>
+            <p>Control de mesas, comandas digitales para cocina en tiempo real, cierre de caja diario y gestión de delivery.</p>
+            <div class="case-tags">
+              <span class="case-tag">WebSockets</span>
+              <span class="case-tag">Touch Interface</span>
             </div>
+            <button class="btn btn-ghost open-demo-btn" style="width:100%; justify-content:center;">Ver Demo Interactivo</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         BENEFITS / COMPARISON SECTION
-         ========================================================================== -->
-    <section class="benefits-section" id="ventajas">
-      <div class="container">
-        <div class="text-center fade-up">
-          <span class="section-tag">Por Qué Funciona</span>
-          <h2 class="section-title">El contraste de pasar a un software a medida</h2>
-          <p class="section-subtitle">
-            Mirá la diferencia operativa real entre depender de planillas de cálculo y tener un sistema centralizado.
-          </p>
+  <!-- ==========================================================================
+       TIENDA ONLINE INTERACTIVA EMBEBIDA
+       ========================================================================== -->
+  <section class="section store-section" id="tienda">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Módulo E-Commerce</span>
+        <h2 class="section-title">Tienda Online Demo 100% Funcional</h2>
+        <p class="section-subtitle">Navegá productos, agregá al carrito y simulá una compra como si fueras tu propio cliente.</p>
+      </div>
+
+      <div class="store-wrapper reveal-scale">
+        <!-- Floating Cart Trigger -->
+        <div class="store-cart-trigger" id="cartTrigger">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span>Mi Carrito</span>
+          <div class="cart-count-badge" id="cartCountBadge">0</div>
         </div>
 
-        <div class="comparison-box fade-up" style="margin-top: 2.5rem;">
-          <div class="comparison-cols">
-            <div class="comp-col before">
-              <div class="comp-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                <span>Operar con Planillas y Cuadernos</span>
-              </div>
-              <div class="comp-list">
-                <div class="comp-item">• Faltantes de stock sorpresa en medio de la venta</div>
-                <div class="comp-item">• Discrepancias en cuentas corrientes con clientes</div>
-                <div class="comp-item">• Horas perdidas consolidando planillas de Excel al final del día</div>
-                <div class="comp-item">• Imposibilidad de saber la ganancia neta real al instante</div>
-              </div>
-            </div>
+        <!-- Categories Bar -->
+        <div class="store-categories" id="storeCategories">
+          <button class="category-pill active" data-cat="all">Todos los Productos</button>
+          <button class="category-pill" data-cat="tech">Electrónica & Tech</button>
+          <button class="category-pill" data-cat="indus">Herramientas & Agro</button>
+          <button class="category-pill" data-cat="office">Oficina & Insumos</button>
+        </div>
 
-            <div class="comp-col after">
-              <div class="comp-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                <span>Operar con DM Software</span>
-              </div>
-              <div class="comp-list">
-                <div class="comp-item">• Alerta automática de reposición urgente de stock</div>
-                <div class="comp-item">• Saldos recalculados en backend, 100% confiables</div>
-                <div class="comp-item">• Factura/Remito en imagen PNG enviada en 1 clic por WhatsApp</div>
-                <div class="comp-item">• Control desde tu celular con PWA instalable</div>
-              </div>
-            </div>
+        <!-- Product Grid -->
+        <div class="store-products-grid" id="storeProductsGrid">
+          <!-- Dynamically populated by store.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECNOLOGÍAS UTILIZADAS
+       ========================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Stack Tecnológico</span>
+        <h2 class="section-title">Herramientas de nivel industrial.</h2>
+        <p class="section-subtitle">Construimos sobre arquitecturas probadas, veloces y mantenibles a largo plazo.</p>
+      </div>
+
+      <div class="tech-grid reveal">
+        <div class="tech-badge">⚛️ React / Next.js</div>
+        <div class="tech-badge">⚡ Node.js & Express</div>
+        <div class="tech-badge">🐘 PostgreSQL Database</div>
+        <div class="tech-badge">🐋 Docker Containers</div>
+        <div class="tech-badge">📲 PWA Mobile First</div>
+        <div class="tech-badge">🔷 Prisma ORM</div>
+        <div class="tech-badge">🎨 Tailwind & CSS3</div>
+        <div class="tech-badge">🌐 Nginx High-Performance</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NUESTRO PROCESO DE TRABAJO
+       ========================================================================== -->
+  <section class="section" id="proceso" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Metodología</span>
+        <h2 class="section-title">De la idea al servidor en 4 pasos.</h2>
+        <p class="section-subtitle">Sin vueltas. Un proceso transparente enfocado en entregar valor rápido.</p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-step reveal">
+          <div class="process-dot">1</div>
+          <div class="process-content">
+            <h3>Diagnóstico & Levantamiento de Flujo</h3>
+            <p>Analizamos cómo trabaja tu negocio actualmente: ventas, planillas Excel, clientes y cuellos de botella.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="process-dot">2</div>
+          <div class="process-content">
+            <h3>Diseño UX/UI & Prototipado</h3>
+            <p>Diseñamos las pantallas exactas de tu sistema para validar la usabilidad antes de escribir código.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="process-dot">3</div>
+          <div class="process-content">
+            <h3>Desarrollo & Migración de Datos</h3>
+            <p>Programamos el sistema e importamos tu lista de precios, clientes y datos actuales sin interrumpir tus ventas.</p>
+          </div>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="process-dot">4</div>
+          <div class="process-content">
+            <h3>Despliegue VPS + Capacitación</h3>
+            <p>Instalamos la plataforma en tu servidor propio y capacitamos a tu equipo de trabajo.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         FAQ ACCORDION SECTION
-         ========================================================================== -->
-    <section class="faq-section" id="faq">
-      <div class="container">
-        <div class="text-center fade-up">
-          <span class="section-tag">Respuestas Claras</span>
-          <h2 class="section-title">Preguntas Frecuentes</h2>
-          <p class="section-subtitle">
-            Resolvemos tus dudas técnicas y comerciales sin vueltas ni letra chica.
-          </p>
+  <!-- ==========================================================================
+       PRECIO / MANTENIMIENTO TRANSPARENTE
+       ========================================================================== -->
+  <section class="section" id="precios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Transparencia Total</span>
+        <h2 class="section-title">Abono Mensual de Servidor & Mantenimiento</h2>
+        <p class="section-subtitle">Tarifa plana clara para mantener tu infraestructura activa y segura.</p>
+      </div>
+
+      <div class="pricing-card reveal-scale">
+        <div class="pricing-label">Infraestructura & Soporte</div>
+        <div class="pricing-amount text-gradient">$5.000</div>
+        <div class="pricing-period">ARS / mes</div>
+
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Servidor VPS dedicado activo 24/7 (necesario para la operación del sistema)</li>
+          <li><span class="check">✓</span> Soporte directo con el desarrollador por WhatsApp</li>
+          <li><span class="check">✓</span> Corrección de errores y ajustes menores sin cargo</li>
+          <li><span class="check">✓</span> Actualizaciones de seguridad del servidor Linux/Docker</li>
+          <li><span class="check">✓</span> Backups periódicos de tu base de datos</li>
+          <li><span class="check">✓</span> Sin cuotas por usuario ni comisiones por ventas</li>
+        </ul>
+
+        <a href="#" class="btn btn-primary btn-lg wa-link" style="width:100%; justify-content:center;" data-wa-msg="Hola Franco, quiero consultar sobre el plan de desarrollo y abono mensual.">
+          <span>Consultar por mi proyecto</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ ACCORDION
+       ========================================================================== -->
+  <section class="section" id="faq" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Preguntas Frecuentes</span>
+        <h2 class="section-title">Resolvemos tus dudas comerciales y técnicas.</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>¿El sistema es 100% de mi propiedad o pago alquiler de software?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            El código fuente desarrollado a medida es de tu propiedad. Se entrega instalado en tu servidor VPS privado (self-hosted con Docker). No cobramos licencias mensuales por cantidad de usuarios ni comisiones por ventas.
+          </div>
         </div>
 
-        <div class="faq-grid fade-up">
-          <!-- Question 1 -->
-          <div class="faq-item active">
-            <button class="faq-question">
-              <span>¿El sistema es 100% de mi propiedad o tengo que pagar alquiler mensual?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq-answer">
-              El desarrollo a medida es de tu propiedad. Se entrega instalado en tu propio servidor o VPS privado (self-hosted con Docker). No cobramos licencias mensuales por cantidad de usuarios ni comisiones por ventas.
-            </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>¿Por qué hay un abono mensual de $5.000 ARS/mes?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            Todos nuestros sistemas requieren este abono mensual para mantener el servidor VPS donde opera tu plataforma en vivo (sin servidor, el sistema no está accesible). Este importe cubre los costos del servidor, soporte directo por WhatsApp, copias de seguridad de tus datos y actualizaciones de seguridad.
           </div>
+        </div>
 
-          <!-- Question 2 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>¿Puedo usar el sistema desde el celular en el depósito o la granja?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq-answer">
-              Sí. Desarrollamos la aplicación bajo el estándar PWA (Progressive Web App). Podés instalarla directo en la pantalla de inicio de tu celular (Android o iOS) y usarla de forma fluida con interfaz optimizada para pantallas táctiles.
-            </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>¿Puedo usar el sistema desde el celular en el depósito o la granja?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            Sí. Todos los sistemas se desarrollan con tecnología Progressive Web App (PWA). Esto permite instalarlos directamente como aplicación en celulares Android/iPhone y computadoras sin pasar por Play Store o App Store, funcionando con fluidez incluso con conexiones móviles débiles.
           </div>
+        </div>
 
-          <!-- Question 3 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>¿Se pueden migrar mis clientes y lista de precios desde un Excel actual?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq-answer">
-              Por supuesto. Nos encargamos de importar tus planillas actuales de clientes, productos y precios para que no tengas que cargar nada desde cero y puedas empezar a operar de inmediato.
-            </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>¿Se pueden migrar mis clientes y lista de precios desde un Excel actual?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            Por supuesto. Nos encargamos de importar tus planillas actuales de clientes, productos y precios para que no tengas que cargar nada desde cero y puedas empezar a operar de inmediato.
           </div>
+        </div>
 
-          <!-- Question 4 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>¿Cómo reciben los comprobantes o remitos mis clientes?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq-answer">
-              El sistema genera automáticamente una imagen PNG del remito o comprobante de pago. Con un solo botón podés enviarlo por WhatsApp directamente al cliente, evitando que tenga que abrir un archivo PDF pesado.
-            </div>
-          </div>
-
-          <!-- Question 5 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>¿Cuánto tiempo demora el desarrollo e implementación del sistema?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq-answer">
-              Depende de la complejidad de la operación, pero típicamente un sistema base está instalado y operativo en un plazo de 2 a 4 semanas, incluyendo la etapa de pruebas y capacitación.
-            </div>
-          </div>
-
-          <!-- Question 6 -->
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>¿Tiene algún costo mensual después del desarrollo?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div class="faq-answer">
-              Sí. Todos nuestros sistemas incluyen un <strong>abono mensual fijo de $5.000 ARS/mes</strong> que es parte del servicio. Esto cubre el mantenimiento del servidor VPS donde corre tu sistema (sin servidor, no hay sistema), corrección de errores, ajustes y mejoras menores, asistencia por WhatsApp y actualizaciones de seguridad. Es una tarifa fija y transparente: sin sorpresas, sin costos por usuario ni comisiones por ventas.
-            </div>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>¿Cómo reciben los comprobantes o remitos mis clientes?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer">
+            El sistema genera automáticamente una imagen PNG del remito o comprobante de pago. Con un solo botón podés enviarlo por WhatsApp directamente al cliente, evitando que tenga que abrir un archivo PDF pesado.
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         CALL TO ACTION FINAL SECTION
-         ========================================================================== -->
-    <section class="cta-section" id="contacto">
-      <div class="container">
-        <div class="cta-box fade-up">
-          <h2 class="cta-title">
-            ¿Tenés un negocio o proyecto en mente? <br><span class="text-gradient">Hablemos directamente.</span>
-          </h2>
-          <p class="cta-subtitle">
-            Coordinamos una charla rápida para analizar tu flujo de trabajo sin ningún tipo de compromiso.
-          </p>
+  <!-- ==========================================================================
+       CALL TO ACTION FINAL
+       ========================================================================== -->
+  <section class="section cta-final" id="contacto">
+    <div class="cta-glow"></div>
+    <div class="container relative z-10">
+      <h2 class="section-title reveal">
+        ¿Listo para llevar la gestión de tu empresa <br><span class="text-gradient">al siguiente nivel?</span>
+      </h2>
+      <p class="section-subtitle reveal" style="margin: 0 auto;">
+        Coordinamos una conversación directa para analizar tu operación y sugerirte la mejor arquitectura.
+      </p>
 
-          <div style="display:flex; justify-content:center; margin: 1.5rem 0;">
-            <div style="background: rgba(37,99,235,0.12); border: 1px solid rgba(37,99,235,0.35); border-radius: 1rem; padding: 1.2rem 2rem; max-width: 460px; text-align:center;">
-              <p style="margin:0 0 0.4rem; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color: var(--accent); font-weight:600;">Plan Soporte & Mantenimiento</p>
-              <p style="margin:0; font-size:2rem; font-weight:800; color: var(--text-primary);">$5.000 <span style="font-size:1rem; font-weight:500; color: var(--text-muted);">/mes</span></p>
-              <p style="margin:0.6rem 0 0; font-size:0.85rem; color: var(--text-secondary); line-height:1.5;">Incluye soporte por WhatsApp, corrección de errores, mejoras menores y actualizaciones de seguridad del servidor.</p>
-            </div>
-          </div>
+      <div class="cta-buttons reveal">
+        <a href="#" class="btn btn-whatsapp btn-lg wa-link" data-wa-msg="Hola Franco, quiero coordinar una charla para un sistema a medida.">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Hablar por WhatsApp</span>
+        </a>
 
-          <a href="#" class="btn btn-whatsapp btn-lg wa-link" data-wa-msg="Hola Franco, quiero consultar por un sistema a medida para mi negocio. ¿Podemos hablar?">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-            </svg>
-            <span>Iniciar conversación por WhatsApp</span>
-          </a>
-        </div>
+        <button class="btn btn-secondary btn-lg open-demo-btn">
+          <span>Ver Demo en Vivo</span>
+        </button>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- ==========================================================================
        FOOTER
        ========================================================================== -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
+      <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <div class="logo-icon" style="width: 2rem; height: 2rem;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
+            <div class="logo-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
             </div>
-            <span>DM Software</span>
+            <span>DM <span class="text-gradient">Software Tech</span></span>
           </a>
-          <p style="font-size: 0.85rem; max-width: 360px;">Desarrollo a medida de sistemas de gestión, aplicaciones PWA y sitios web corporativos.</p>
+          <p>Desarrollo a medida de sistemas de gestión empresarial, e-commerce y aplicaciones móviles PWA. San Rafael, Mendoza & Argentina.</p>
         </div>
 
-        <div class="footer-links">
-          <a href="#soluciones" class="footer-link">Soluciones</a>
-          <a href="#casos" class="footer-link">Sistemas Reales</a>
-          <a href="#ventajas" class="footer-link">Ventajas</a>
-          <a href="#faq" class="footer-link">FAQ</a>
+        <div>
+          <div class="footer-col-title">Soluciones</div>
+          <div class="footer-links">
+            <a href="#soluciones">Sistemas a Medida</a>
+            <a href="#soluciones">Tiendas Online</a>
+            <a href="#soluciones">Apps PWA Móviles</a>
+            <a href="#soluciones">Dashboards KPIs</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Empresa</div>
+          <div class="footer-links">
+            <a href="#casos">Sistemas Reales</a>
+            <a href="#proceso">Nuestro Proceso</a>
+            <a href="#precios">Precios & VPS</a>
+            <a href="#faq">Preguntas Frecuentes</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contacto</div>
+          <div class="footer-links">
+            <a href="#" class="wa-link">WhatsApp Directo</a>
+            <a href="mailto:info@dmsoftwaretech.com">info@dmsoftwaretech.com</a>
+            <span>San Rafael, Mendoza</span>
+          </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 DM Software. Todos los derechos reservados.</p>
+        <p>&copy; 2026 DM Software Tech. Todos los derechos reservados.</p>
+        <p>Desarrollado con excelencia técnica en Argentina.</p>
       </div>
     </div>
   </footer>
@@ -486,16 +639,136 @@
   <!-- ==========================================================================
        FLOATING WHATSAPP BUTTON
        ========================================================================== -->
-  <div class="whatsapp-float">
-    <span class="whatsapp-badge-tooltip">Atención directa con el desarrollador</span>
-    <a href="#" class="whatsapp-float-btn wa-link" aria-label="Contactar por WhatsApp">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+  <div class="wa-float">
+    <span class="wa-float-tooltip">Atención directa con el desarrollador</span>
+    <a href="#" class="wa-float-btn wa-link" aria-label="Contactar por WhatsApp">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-0.999 3.648 3.742-0.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
       </svg>
     </a>
   </div>
 
-  <!-- JavaScript -->
-  <script src="js/main.js?v=3"></script>
+  <!-- ==========================================================================
+       INTERACTIVE MANAGEMENT SYSTEM MODAL (DEMO FULLSCREEN)
+       ========================================================================== -->
+  <div class="demo-modal" id="demoModal">
+    <div class="demo-window">
+      <!-- Window Topbar -->
+      <div class="demo-header-bar">
+        <div class="demo-controls-left">
+          <div class="demo-traffic-dots">
+            <span id="closeDemoDot"></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="demo-sys-badge">● Sistema DM ERP Enterprise</div>
+        </div>
+        <div style="font-size:0.8rem; color:var(--text-tertiary);">Versión 2.4.0 Live Mockup</div>
+        <button class="demo-close-btn" id="closeDemoBtn" aria-label="Cerrar Demo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- App Body (Sidebar + Main Area) -->
+      <div class="demo-app-body">
+        <!-- Sidebar -->
+        <aside class="demo-sidebar">
+          <div class="demo-sidebar-brand">
+            <div class="logo-icon" style="width:24px; height:24px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <span class="logo-text">DM System</span>
+          </div>
+
+          <div class="demo-nav-item active" data-view="dashboard">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+            <span>Dashboard</span>
+          </div>
+
+          <div class="demo-nav-item" data-view="ventas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <span>Ventas</span>
+          </div>
+
+          <div class="demo-nav-item" data-view="clientes">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>Clientes</span>
+          </div>
+
+          <div class="demo-nav-item" data-view="productos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            <span>Productos</span>
+          </div>
+
+          <div class="demo-nav-item" data-view="stock">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            <span>Stock & Alertas</span>
+          </div>
+
+          <div class="demo-nav-item" data-view="compras">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span>Compras</span>
+          </div>
+
+          <div class="demo-nav-item" data-view="reportes">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <span>Reportes</span>
+          </div>
+
+          <div class="demo-nav-item" data-view="config">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Configuración</span>
+          </div>
+        </aside>
+
+        <!-- Main View Canvas Container -->
+        <main class="demo-main-canvas" id="demoMainCanvas">
+          <!-- Dynamically filled by js/demo.js -->
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CART DRAWER & CHECKOUT MODAL
+       ========================================================================== -->
+  <div class="cart-drawer-backdrop" id="cartBackdrop">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3>Carrito de Compras</h3>
+        <button class="demo-close-btn" id="closeCartBtn">✕</button>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Dynamically filled by store.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal:</span>
+          <span class="text-gradient" id="cartSubtotalVal">$0</span>
+        </div>
+        <button class="btn btn-primary" style="width:100%; justify-content:center;" id="btnCheckout">
+          <span>Simular Checkout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Success Modal -->
+  <div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-card">
+      <div class="checkout-success-icon">✓</div>
+      <h3 style="font-size:1.4rem; font-weight:800;">¡Pedido Simulado con Éxito!</h3>
+      <p style="color:var(--text-secondary); font-size:0.9rem;">Esta es la experiencia fluida que tendrán tus clientes al comprar en tu tienda online a medida.</p>
+      <button class="btn btn-primary" id="btnCloseCheckout" style="margin:10px auto 0;">Entendido</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/main.js?v=4" defer></script>
+  <script src="js/animations.js?v=4" defer></script>
+  <script src="js/demo.js?v=4" defer></script>
+  <script src="js/store.js?v=4" defer></script>
 </body>
 </html>
